@@ -15,6 +15,10 @@
 		96DD7F4C1AC394A2009954DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DD7F4B1AC394A2009954DC /* Images.xcassets */; };
 		96DD7F4F1AC394A2009954DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96DD7F4D1AC394A2009954DC /* LaunchScreen.xib */; };
 		96DD7F5B1AC394A2009954DC /* LearnCoreData1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DD7F5A1AC394A2009954DC /* LearnCoreData1Tests.m */; };
+		96DD7F661AC3966F009954DC /* NoteManagerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DD7F651AC3966F009954DC /* NoteManagerObject.m */; };
+		96DD7F6A1AC39C9F009954DC /* CoreDataDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DD7F691AC39C9F009954DC /* CoreDataDAO.m */; };
+		96DD7F6E1AC3A28E009954DC /* NoteDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DD7F6D1AC3A28E009954DC /* NoteDAO.m */; };
+		96DD7F711AC3A2AE009954DC /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DD7F701AC3A2AE009954DC /* Note.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,14 @@
 		96DD7F541AC394A2009954DC /* LearnCoreData1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnCoreData1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DD7F591AC394A2009954DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96DD7F5A1AC394A2009954DC /* LearnCoreData1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnCoreData1Tests.m; sourceTree = "<group>"; };
+		96DD7F641AC3966F009954DC /* NoteManagerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteManagerObject.h; sourceTree = "<group>"; };
+		96DD7F651AC3966F009954DC /* NoteManagerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteManagerObject.m; sourceTree = "<group>"; };
+		96DD7F681AC39C9F009954DC /* CoreDataDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDAO.h; sourceTree = "<group>"; };
+		96DD7F691AC39C9F009954DC /* CoreDataDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataDAO.m; sourceTree = "<group>"; };
+		96DD7F6C1AC3A28E009954DC /* NoteDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteDAO.h; sourceTree = "<group>"; };
+		96DD7F6D1AC3A28E009954DC /* NoteDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteDAO.m; sourceTree = "<group>"; };
+		96DD7F6F1AC3A2AE009954DC /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		96DD7F701AC3A2AE009954DC /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,8 @@
 		96DD7F3A1AC394A2009954DC /* LearnCoreData1 */ = {
 			isa = PBXGroup;
 			children = (
+				96DD7F6B1AC3A270009954DC /* Class */,
+				96DD7F671AC39C63009954DC /* CoreData */,
 				96DD7F3F1AC394A2009954DC /* AppDelegate.h */,
 				96DD7F401AC394A2009954DC /* AppDelegate.m */,
 				96DD7F451AC394A2009954DC /* ViewController.h */,
@@ -90,7 +104,6 @@
 				96DD7F481AC394A2009954DC /* Main.storyboard */,
 				96DD7F4B1AC394A2009954DC /* Images.xcassets */,
 				96DD7F4D1AC394A2009954DC /* LaunchScreen.xib */,
-				96DD7F421AC394A2009954DC /* LearnCoreData1.xcdatamodeld */,
 				96DD7F3B1AC394A2009954DC /* Supporting Files */,
 			);
 			path = LearnCoreData1;
@@ -120,6 +133,29 @@
 				96DD7F591AC394A2009954DC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96DD7F671AC39C63009954DC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				96DD7F641AC3966F009954DC /* NoteManagerObject.h */,
+				96DD7F651AC3966F009954DC /* NoteManagerObject.m */,
+				96DD7F421AC394A2009954DC /* LearnCoreData1.xcdatamodeld */,
+				96DD7F681AC39C9F009954DC /* CoreDataDAO.h */,
+				96DD7F691AC39C9F009954DC /* CoreDataDAO.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		96DD7F6B1AC3A270009954DC /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				96DD7F6F1AC3A2AE009954DC /* Note.h */,
+				96DD7F701AC3A2AE009954DC /* Note.m */,
+				96DD7F6C1AC3A28E009954DC /* NoteDAO.h */,
+				96DD7F6D1AC3A28E009954DC /* NoteDAO.m */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,9 +259,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				96DD7F411AC394A2009954DC /* AppDelegate.m in Sources */,
+				96DD7F6A1AC39C9F009954DC /* CoreDataDAO.m in Sources */,
+				96DD7F6E1AC3A28E009954DC /* NoteDAO.m in Sources */,
 				96DD7F3E1AC394A2009954DC /* main.m in Sources */,
 				96DD7F471AC394A2009954DC /* ViewController.m in Sources */,
+				96DD7F661AC3966F009954DC /* NoteManagerObject.m in Sources */,
 				96DD7F441AC394A2009954DC /* LearnCoreData1.xcdatamodeld in Sources */,
+				96DD7F711AC3A2AE009954DC /* Note.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
